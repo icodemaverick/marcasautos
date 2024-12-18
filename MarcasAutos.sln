@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarcasAutos.Api", "MarcasAutos.Api\MarcasAutos.Api.csproj", "{C0147306-AC39-4315-B3D5-2F49582C0DF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarcasAutos.Api", "MarcasAutos.Api\MarcasAutos.Api.csproj", "{C0147306-AC39-4315-B3D5-2F49582C0DF9}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D448B24E-28D1-412C-A647-CFB53185AEDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarcasAutos.Infrastructure", "MarcasAutos.Infrastructure\MarcasAutos.Infrastructure.csproj", "{E3E0C240-6834-425B-904D-315DF214EB82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarcasAutos.Infrastructure", "MarcasAutos.Infrastructure\MarcasAutos.Infrastructure.csproj", "{E3E0C240-6834-425B-904D-315DF214EB82}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{413FCC84-1BAF-4CE2-B965-DA99FAE895F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{C0147306-AC39-4315-B3D5-2F49582C0DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0147306-AC39-4315-B3D5-2F49582C0DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0147306-AC39-4315-B3D5-2F49582C0DF9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D448B24E-28D1-412C-A647-CFB53185AEDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D448B24E-28D1-412C-A647-CFB53185AEDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D448B24E-28D1-412C-A647-CFB53185AEDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D448B24E-28D1-412C-A647-CFB53185AEDC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E3E0C240-6834-425B-904D-315DF214EB82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E3E0C240-6834-425B-904D-315DF214EB82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3E0C240-6834-425B-904D-315DF214EB82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3E0C240-6834-425B-904D-315DF214EB82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{413FCC84-1BAF-4CE2-B965-DA99FAE895F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413FCC84-1BAF-4CE2-B965-DA99FAE895F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413FCC84-1BAF-4CE2-B965-DA99FAE895F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413FCC84-1BAF-4CE2-B965-DA99FAE895F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
