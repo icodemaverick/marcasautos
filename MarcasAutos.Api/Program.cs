@@ -1,5 +1,7 @@
 using MarcasAutos.Api;
 using MarcasAutos.Infrastructure;
+using MarcasAutos.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +18,15 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
+    using var scope = app.Services.CreateScope();
+
+    var dbContextInfraestructure = scope.ServiceProvider.GetRequiredService<MarcasAutosDbContext>();
+
+    if (dbContextInfraestructure.Database.GetPendingMigrations().Any())
+    {
+        dbContextInfraestructure.Database.Migrate();
+    }
 }
 
 app.UseAuthorization();

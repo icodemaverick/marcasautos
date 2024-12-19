@@ -12,6 +12,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["MarcasAutos.Api/MarcasAutos.Api.csproj", "MarcasAutos.Api/"]
+COPY ["MarcasAutos.Infrastructure/MarcasAutos.Infrastructure.csproj", "MarcasAutos.Infrastructure/"]
 RUN dotnet restore "./MarcasAutos.Api/MarcasAutos.Api.csproj"
 COPY . .
 WORKDIR "/src/MarcasAutos.Api"

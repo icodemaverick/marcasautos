@@ -18,8 +18,8 @@ services:
         networks:
             - backend
 
-    api:
-        image: api
+    backend:
+        image: marcasautos-api
         container_name: api
         hostname: api
         restart: always
@@ -37,15 +37,15 @@ services:
         networks:
             - backend
 
-#    test:
-#        image: test
-#        build:
-#            context: .
-#            dockerfile: MarcasAutos.Test/Dockerfile
-#        depends_on:
-#            - db
-#        networks:
-#            - backend
+    test:
+        image: test
+        build:
+            context: .
+            dockerfile: MarcasAutos.Test/Dockerfile
+        depends_on:
+            - db
+        networks:
+            - backend
 
 volumes:
     postgres-data:

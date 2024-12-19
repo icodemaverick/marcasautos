@@ -5,7 +5,7 @@ namespace MarcasAutos.Infrastructure.Data;
 
 public class MarcasAutosDbContext(DbContextOptions options) : DbContext(options)
 {
-    private DbSet<Marca> Marcas { get; set; }
+    public DbSet<Marca> Marcas { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

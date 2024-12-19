@@ -9,8 +9,7 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {        
-        var connectionString = configuration["DB_CONNECTION_STRING"] ??
-                               configuration.GetConnectionString("DefaultConnection");
+        var connectionString = configuration["DB_CONNECTION_STRING"] ?? throw new NullReferenceException("DB_CONNECTION_STRING");
 
         services.AddDbContext<MarcasAutosDbContext>(options => options.UseNpgsql(connectionString));
 

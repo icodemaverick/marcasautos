@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MarcasAutos.Test": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
